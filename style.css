@@ -3,7 +3,6 @@ html{
 }
 body {
   min-height: 100%;
-  border: 1pt solid #000000;
 }
 #Question {
 	text-align: center;
