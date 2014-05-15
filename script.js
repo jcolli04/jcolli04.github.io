@@ -5,5 +5,5 @@ window.onload = function() {
 	object.style.border = "1pt solid #000000";
 	var swf = document.getElementById('swffile');
 	swf.style.width = "100%";
-	swf.style.height = window.innerHeight;
+	swf.style.height = "100%";
 }
