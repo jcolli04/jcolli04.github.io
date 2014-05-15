@@ -7,4 +7,5 @@ body {
 }
 #Question {
 	text-align: center;
+	border: 1pt solid #000000;
 }
