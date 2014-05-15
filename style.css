@@ -8,3 +8,12 @@ body {
 	text-align: center;
 	border: 1pt solid #000000;
 }
+#embedded-object {
+	width: 100%;
+	height: 600px;
+	border: 1pt solid #000000;
+}
+#swffile {
+	width: 100%;
+	height: 100%;
+}
