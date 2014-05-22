@@ -13,7 +13,7 @@ function Game  () {
 
 function addListeners () {
 	var middle = true;
-	fish.addEventListener("keydown", function(event) {
+	document.addEventListener("keydown", function(event) {
 		if(event.keyCode == 38){
 			console.log("Up");
 			if(moveUp() == true){
@@ -21,7 +21,7 @@ function addListeners () {
 			}
 		}
 	});
-	fish.addEventListener("keydown", function(event) {
+	document.addEventListener("keydown", function(event) {
 		if(event.keyCode == 40){
 			console.log("Down");
 			if(moveDown() == true){
