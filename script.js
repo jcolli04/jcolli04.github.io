@@ -7,7 +7,7 @@ window.onload = function () {
 
 function Game  () {
 	console.log('game started');
-	var fish = document.getElementById('fish');
+	new fish();
 	addListeners();
 }
 
@@ -29,6 +29,23 @@ function addListeners () {
 			}
 		}
 	});
+}
+
+function fish() {
+	this.guy = document.getElementById('fish');
+	this.middle = true;
+}
+
+fish.prototype.moveUp() {
+	if(fish.offsetTop != 50){
+		fish.style.top = (fish.offsetTop - 100)+'px';
+	}
+}
+
+fish.prototype.moveDown() {
+	if(fish.offsetTop != 540){
+		fish.style.top = (fish.offsetTop)+'px';
+	}
 }
 
 function middle() {
@@ -53,28 +70,6 @@ function over() {
 	}else{
 		return false;
 	}
-}
-
-function moveUp() {
-	if(fish.offsetTop != 50){
-		if(middle()){
-			var mid = middle();
-			fish.style.top = (fish.offsetTop - 100)+'px';
-			return mid;
-		}else if(under()){
-			fish.style.top = (fish.offsetTop - 100)+'px';
-		}
-	}
-	return false;
-}
-
-function moveDown() {
-	if(fish.offsetTop != 540){
-		var mid = middle();
-		fish.style.top = (fish.offsetTop)+'px';
-		return mid;
-	}
-	return false;
 }
 
 function evalHeight() {
