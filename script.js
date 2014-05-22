@@ -15,12 +15,14 @@ function addListeners () {
 	document.addEventListener("keydown", function(event) {
 		if(event.keyCode == 38){
 			console.log("Up");
+			fish.moveUp();
 			evalHeight();
 		}
 	});
 	document.addEventListener("keydown", function(event) {
 		if(event.keyCode == 40){
 			console.log("Down");
+			fish.moveDown();
 			evalHeight();
 		}
 	});
