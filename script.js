@@ -31,13 +31,13 @@ function fish() {
 	this.middle = true;
 }
 
-fish.prototype.moveUp() {
+fish.prototype.moveUp = function() {
 	if(fish.offsetTop != 50){
 		fish.style.top = (fish.offsetTop - 100)+'px';
 	}
 }
 
-fish.prototype.moveDown() {
+fish.prototype.moveDown = function() {
 	if(fish.offsetTop != 540){
 		fish.style.top = (fish.offsetTop)+'px';
 	}
