@@ -12,21 +12,16 @@ function Game  () {
 }
 
 function addListeners () {
-	var middle = true;
 	document.addEventListener("keydown", function(event) {
 		if(event.keyCode == 38){
 			console.log("Up");
-			if(moveUp() == true){
-				evalHeight();
-			}
+			evalHeight();
 		}
 	});
 	document.addEventListener("keydown", function(event) {
 		if(event.keyCode == 40){
 			console.log("Down");
-			if(moveDown() == true){
-				evalHeight();
-			}
+			evalHeight();
 		}
 	});
 }
@@ -45,30 +40,6 @@ fish.prototype.moveUp() {
 fish.prototype.moveDown() {
 	if(fish.offsetTop != 540){
 		fish.style.top = (fish.offsetTop)+'px';
-	}
-}
-
-function middle() {
-	if(fish.offsetTop == 300) {
-		return true;
-	}else{
-		return false;
-	}
-}
-
-function under() {
-	if(fish.offsetTop > 300) {
-		return true;
-	}else{
-		return false;
-	}
-}
-
-function over() {
-	if(fish.offsetTop < 300) {
-		return true;
-	}else{
-		return false;
 	}
 }
 
